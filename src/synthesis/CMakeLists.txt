@@ -1,6 +1,6 @@
 set (CMAKE_CXX_STANDARD 14)
 
-add_library(synthesis SHARED Common.cpp DFA.cpp InputFirst.cpp syn.cpp)
+add_library(synthesis STATIC Common.cpp DFA.cpp InputFirst.cpp syn.cpp)
 include_directories(${CUDD_INCLUDE_DIRS})
 
 #add_executable(synth synStrategy.cpp)
